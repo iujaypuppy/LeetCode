@@ -17,7 +17,7 @@ class Solution {
         }
 
         reversedVal *= sign;
-        int ret = (int)reversedVal;
+        int ret = (int32_t)reversedVal;
         /* check for overflowing */
         if (ret != reversedVal) {
             return 0;

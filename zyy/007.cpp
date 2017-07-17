@@ -13,7 +13,7 @@ class Solution {
         while (unsignedVal != 0) {
             int digit = unsignedVal % base;
             unsignedVal /= base;
-            reversedVal = reversedVal * 10 + digit;
+            reversedVal = reversedVal * base + digit;
         }
 
         reversedVal *= sign;

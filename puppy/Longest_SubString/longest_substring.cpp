@@ -2,6 +2,8 @@ class Solution {
 	public:
 		int lengthOfLongestSubstring(string s) {
 			int len = s.size();
+			if (len == 0) return 0;
+
 			int max_len = 1;
 			for (int i = 0; i<len; i++)
 			{
@@ -11,7 +13,6 @@ class Solution {
 					string find_str = s.substr(i, j - i);
 					if (find_str.find(s[j]) != string::npos)
 					{
-						max_len = (res > max_len) ? res : max_len;
 						break;
 					}
 					else
@@ -19,6 +20,7 @@ class Solution {
 						res++;
 					}
 				}
+				max_len = (res > max_len) ? res : max_len;
 			}
 			return max_len;	
 		}

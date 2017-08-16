@@ -1,9 +1,3 @@
-#include <string>
-#include <cstring>
-#include <cstdio>
-#include <climits>
-using namespace std;
-
 class Solution {
   public:
     int myAtoi(string str) {
@@ -55,8 +49,3 @@ class Solution {
         return ret;
     }
 };
-
-int main(void) {
-    printf("%d\n", Solution().myAtoi("    1"));
-    return 0;
-}

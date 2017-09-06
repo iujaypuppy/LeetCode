@@ -11,7 +11,7 @@ class Solution {
               |0|1|0|1|1|1|0|1|
           The idea is that, we calculate the ones in every two bits:
               |0|1|0|1|1|1|0|1| -> |0+1|0+1|1+1|0+1| -> |01|01|10|01|
-          the final number |01|01|10|01|, every cell composed of two bits means how many
+          In the final number |01|01|10|01|, every cell composed of two bits means how many
           ones are there in this position of original number, e.g.: in the third cell, it
           is "10", which means in orginal number, there are two ones in the 5th and 6th bit
           position.

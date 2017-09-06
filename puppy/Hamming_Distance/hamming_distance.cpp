@@ -47,5 +47,3 @@ public:
         return hamming_distance;
     }
 };
-
-

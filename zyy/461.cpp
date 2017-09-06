@@ -17,8 +17,8 @@ class Solution {
           position.
           Similarly, we can get how many bits are 1 in every four bits:
               |01|01|10|01| -> |01+01|10+01| -> |0010|0011|
-          and the two cells means that, in the first four bits of original number, there are
-          two ones, and in the last four bits there three.
+          and the two cells mean that, in the first four bits of original number, there are
+          two ones, and in the last four bits there are three.
           Finally, we can get how many bits are 1 in all the eight bits:
               |0010|0011| -> |0010+0011| -> |00000101| = 5
 

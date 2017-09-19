@@ -47,7 +47,7 @@ class Solution {
         }
 
       private:
-        static int power(int base, int times) inline {
+        static int power(int base, int times) {
             if (times == 0) {
                 return 1;
             }
@@ -65,7 +65,8 @@ class Solution {
         /* Use DFS to enumerate all factors */
         int factorSumRecursive(vector<Prime>::iterator i) {
             if (i == primes.end()) {
-                return factor();
+                int f(factor());
+                return num == f ? 0 : f;
             }
 
             int ret(0);
@@ -84,6 +85,9 @@ class Solution {
     };
 
     bool checkPerfectNumber(int num) {
+        if (num <= 0) {
+            return false;
+        }
         Factorization factors(num);
         return factors.factorSum() == num;
     }
